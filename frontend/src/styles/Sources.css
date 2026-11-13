@@ -1,0 +1,91 @@
+.sources-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.sources-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sources-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-weight: 600;
+}
+
+.sources-score-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-weight: 600;
+  text-align: right;
+}
+
+.sources-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--line);
+}
+
+.source-row {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  transition: opacity 0.15s ease;
+}
+
+.source-index {
+  color: var(--acc);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.source-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.source-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.source-heading-path {
+  font-size: 12.5px;
+  color: var(--mute);
+  line-height: 1.3;
+}
+
+.source-score {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: var(--mute);
+}
+
+.source-row-cited {
+  opacity: 1;
+}
+
+.source-row-muted {
+  opacity: 0.55;
+}
+
+.sources-refused .source-row {
+  opacity: 0.55;
+}
+

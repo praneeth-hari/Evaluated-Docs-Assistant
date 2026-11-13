@@ -1,0 +1,16 @@
+/* Design tokens */
+:root {
+  /* Colour */
+  --bg:      #fafaf8;
+  --ink:     #16181a;
+  --mute:    #6b7076;
+  --line:    #e6e5e0;
+  --acc:     #1f4d45;
+  --code-bg: #14201e;
+  --warn:    #b7791f;
+
+  /* Typography */
+  --font-serif: "Liberation Serif", Georgia, serif;
+  --font-sans:  Inter, "Liberation Sans", Arial, sans-serif;
+}
+
