@@ -1,0 +1,27 @@
+.refusal-notice {
+  border-left: 2px solid var(--warn);
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.refusal-title {
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.refusal-subtitle {
+  color: var(--mute);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+.refusal-score-detail {
+  color: var(--mute);
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
