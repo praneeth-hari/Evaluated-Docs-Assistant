@@ -330,3 +330,4 @@ The assistant is configured via environment variables or `.env`:
 | `LLM_MODEL` | `llama31-rag` | Model name to invoke for answer generation. |
 | `LLM_TIMEOUT_SECONDS` | `300` | Request timeout in seconds for LLM generation calls. |
 | `APP_PORT` | `8001` | Server listening port. |
+| `CORS_ORIGINS` | `http://localhost:5173` | Comma-separated list of origins allowed by the CORS middleware (e.g. `http://localhost:5173,https://your-domain.com`). |
