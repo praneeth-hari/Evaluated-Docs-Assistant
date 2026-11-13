@@ -25,6 +25,7 @@ class Settings(BaseSettings):
 
     app_host: str = "0.0.0.0"
     app_port: int = 8001
+    cors_origins: str = "http://localhost:5173"
 
     # Documents to exclude (changelogs, contributor rosters, meta files)
     exclude_docs: list[str] = [

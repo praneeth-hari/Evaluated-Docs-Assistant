@@ -5,6 +5,7 @@ import time
 from contextlib import asynccontextmanager
 from typing import Any, List, Optional, Tuple
 from fastapi import FastAPI, HTTPException, status
+from fastapi.middleware.cors import CORSMiddleware
 from app.config import REFUSAL_MESSAGE, settings
 from app.llm import LLMClient, process_answer_and_citations
 from app.schemas import AskRequest, AskResponse, HealthResponse, LatencyMs, SourceItem
@@ -70,6 +71,15 @@ app = FastAPI(
     version="1.0.0",
     description="Production-grade RAG assistant over PostgreSQL + pgvector and Ollama llama31-rag.",
     lifespan=lifespan,
+)
+
+_cors_origins = [o.strip() for o in settings.cors_origins.split(",") if o.strip()]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
