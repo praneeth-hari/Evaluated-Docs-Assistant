@@ -178,6 +178,7 @@ Evaluated-RAG-Assistant/
 ├── scripts/          # Helper utilities (documentation downloader)
 ├── data/             # Documentation directory (downloaded via script, not committed)
 ├── ui/               # Streamlit page that calls the API (ui/app.py)
+├── frontend/         # React + TypeScript web frontend (Vite)
 ├── docker-compose.yml# Container orchestration for pgvector service
 ├── Modelfile         # Ollama model definition for llama31-rag
 ├── .env.example      # Environment variable template
@@ -312,6 +313,35 @@ Open `http://localhost:8501` in your browser. The page connects to the backend u
 ![Web UI answer with cited sources](docs/ui-answer.png)
 
 ![Web UI refusal notice](docs/ui-refused.png)
+
+## Web frontend
+
+A modern React + TypeScript frontend built with Vite and plain CSS design tokens. It allows asking documentation questions, displays cited answers with inline citations (`[n]`) and formatted code blocks, lists retrieved sources with vector similarity scores, and presents a refusal notice whenever the similarity score gate blocks an answer. The side panel also tracks live document and chunk counts alongside offline evaluation benchmarks.
+
+*(Note: The Streamlit UI in `ui/` still works as a simpler alternative).*
+
+![Web frontend answer with cited sources](docs/frontend-answer.png)
+*Answer view with cited inline documentation and retrieved candidate scores.*
+
+![Web frontend refusal notice](docs/frontend-refused.png)
+*Refusal view when the query similarity score fails the threshold gate.*
+
+### Running the frontend
+
+With the API running first on port 8001:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+### Configuration
+
+- **`VITE_API_URL`**: Target URL of the backend API (default: `http://localhost:8001`). Configure this in `frontend/.env` if the API runs on a different port or host.
+- **`CORS_ORIGINS`**: On the API side, configure allowed origins as a comma-separated list in `.env` (default: `http://localhost:5173`).
 
 ## Configuration
 
