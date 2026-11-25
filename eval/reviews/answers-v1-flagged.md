@@ -1,6 +1,6 @@
 # Flagged Answered Questions: v1
 
-Verdicts below are first-pass drafts written by Claude and checked by the author against each cited chunk. This deviates from the pre-registered protocol (PREREGISTRATION_ANSWERS.md, item E), which specified author-only scoring. These are the 2 answered v1 questions that had a warning and were not in the standard review sample.
+Verdicts below are first-pass drafts written by an AI assistant and checked by the author against each cited chunk. This deviates from the pre-registered protocol (PREREGISTRATION_ANSWERS.md, item E), which specified author-only scoring. These are the 2 answered v1 questions that had a warning and were not in the standard review sample.
 
 Answered questions that have a warning or are not page-grounded, and were NOT in the standard review file (2 questions).
 

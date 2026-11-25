@@ -138,7 +138,7 @@ All evaluation scripts are runnable from the repository root:
 - **Small sample sizes**: With 20 answerable questions on v2, each question accounts for 5.0 percentage points on Hit@1 and Hit@5; in 15-answer review samples, one question represents 6.7 percentage points.
 - **Development set bias**: The v1 set (31 answerable questions) was AI-drafted and used during iterative development, potentially favoring keyword matching.
 - **Page-level hit matching**: A hit counts any chunk from an expected page, even if the specific chunk lacks the information needed to answer the question (e.g. `q002` retrieved 4 expected-page chunks in its top 5, none showing the OAuth2PasswordBearer setup).
-- **Assisted manual review**: Answer correctness verdicts were first-pass drafts written with Claude and checked by the author against each cited chunk, deviating from the author-only scoring specified in the pre-registration protocol.
+- **Assisted manual review**: Answer correctness verdicts were first-pass drafts written with an AI assistant and checked by the author against each cited chunk, deviating from the author-only scoring specified in the pre-registration protocol.
 
 ## Tech Stack
 

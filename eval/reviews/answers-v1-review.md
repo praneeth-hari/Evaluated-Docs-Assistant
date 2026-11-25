@@ -1,6 +1,6 @@
 # Manual Review: answers-v1
 
-Verdicts below are first-pass drafts written by Claude and checked by the author against each cited chunk. This deviates from the pre-registered protocol (PREREGISTRATION_ANSWERS.md, item E), which specified author-only scoring. The sample is the first 15 answered questions by id, not a random draw.
+Verdicts below are first-pass drafts written by an AI assistant and checked by the author against each cited chunk. This deviates from the pre-registered protocol (PREREGISTRATION_ANSWERS.md, item E), which specified author-only scoring. The sample is the first 15 answered questions by id, not a random draw.
 
 Reviewing 15 answered questions (ordered by id).
 Score each question as: correct / partly / incorrect.

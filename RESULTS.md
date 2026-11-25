@@ -189,7 +189,7 @@ in each set, plus the 2 flagged v1 answers; not random):
 | v1 flagged (answers with a warning) | 0 | 2 | 0 | 2 |
 | v2 | 7 | 5 | 3 | 15 |
 
-Method note: these verdicts are first-pass drafts written by Claude and checked
+Method note: these verdicts are first-pass drafts written by an AI assistant and checked
 by the author against each cited chunk. This departs from the pre-registered
 protocol (author-only scoring). No LLM judged any answer without author review.
 
